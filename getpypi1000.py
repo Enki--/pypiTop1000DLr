@@ -1,7 +1,7 @@
 import subprocess
 import json
 
-curlCmd = ['curl', 'https://raw.githubusercontent.com/hugovk/top-pypi-packages/master/top-pypi-packages-30-days.json', '-o' '/tmp/pypi-packages.json']
+curlCmd = ['curl', 'https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.json', '-o' '/tmp/pypi-packages.json']
 subprocess.run(curlCmd)
 
 with open("/tmp/pypi-packages.json", "r") as packages:
